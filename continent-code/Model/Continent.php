@@ -18,7 +18,7 @@ class Continent
     /**
      * @param string $code
      */
-    public function setCode(string $code): void
+    protected function setCode(string $code): void
     {
         $this->code = $code;
     }
@@ -30,6 +30,6 @@ class Continent
      */
     public function __construct(string $code)
     {
-        $this->code = $code;
+        $this->setCode($code);
     }
 }
