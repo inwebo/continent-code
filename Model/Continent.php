@@ -2,13 +2,13 @@
 
 namespace Inwebo\Geo;
 
-class Continent
+class Continent implements ContinentInterface
 {
     /** @var string */
     private $code;
 
     /**
-     * @return string
+     * {@inheritDoc}
      */
     public function getCode(): string
     {
