@@ -14,7 +14,7 @@ class ContinentException extends \Exception
      * @param Throwable|null $previous
      * @param string         $continentCode
      */
-    public function __construct($message = "", $code = 0, Throwable $previous = null, string $continentCode)
+    public function __construct($message = "", $code = 0, Throwable $previous = null, string $continentCode = 'Configure it you tool')
     {
         if($message === "") {
             $message = sprintf("Continent code must be a 2 upper letters string, your input : %s", $continentCode);
