@@ -1,5 +1,17 @@
 # continent-code
-PHP7.2 continent code model.
+PHP 7.4 continent code model.
+
+## Install
+
+### Composer
+```bash
+composer require inwebo/continent-code
+```
+
+### Git
+```bash
+git clone https://github.com/inwebo/continent-code.git
+```
 
 ## Get data
 
