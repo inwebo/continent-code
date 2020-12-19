@@ -2,32 +2,23 @@
 
 namespace Inwebo\Geo;
 
-class Continent implements ContinentInterface
+class Continent
 {
-    /** @var string */
-    private $code;
+    private string $code;
 
     /**
-     * {@inheritDoc}
+     * @return string 2 upper case letters
      */
     public function getCode(): string
     {
         return $this->code;
     }
 
-    /**
-     * @param string $code
-     */
     protected function setCode(string $code): void
     {
         $this->code = $code;
     }
 
-    /**
-     * Continent constructor.
-     *
-     * @param string $code
-     */
     public function __construct(string $code)
     {
         $this->setCode($code);
